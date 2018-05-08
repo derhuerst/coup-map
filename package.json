@@ -17,7 +17,14 @@
 	"engines": {
 		"node": ">=6"
 	},
-	"dependencies": {},
+	"dependencies": {
+		"compression": "^1.7.2",
+		"corser": "^2.0.1",
+		"express": "^4.16.3",
+		"fetch-ponyfill": "^6.0.2",
+		"pinkie-promise": "^2.0.1",
+		"serve-static": "^1.13.2"
+	},
 	"devDependencies": {
 		"babel-core": "^6.26.3",
 		"babel-preset-env": "^1.6.1",
