@@ -23,10 +23,11 @@
 		"babel-preset-env": "^1.6.1",
 		"babelify": "^8.0.0",
 		"browserify": "^16.2.0",
+		"envify": "^4.1.0",
 		"uglify-es": "^3.3.9"
 	},
 	"scripts": {
-		"build": "browserify -g [ babelify --presets env ] index.js | uglifyjs -mc > bundle.js",
-		"build:dev": "browserify index.js > bundle.js"
+		"build": "env NODE_ENV=production browserify -g [ babelify --presets env ] -g [ envify purge ] client/index.js | uglifyjs -mc > client/bundle.js",
+		"build:dev": "env NODE_ENV=dev browserify -g envify client/index.js > client/bundle.js"
 	}
 }
