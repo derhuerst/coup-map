@@ -14,13 +14,8 @@
 git clone https://github.com/derhuerst/coup-map.git
 cd coup-map
 npm install --production
-```
-
-
-## Usage
-
-```js
-todo
+env MAPBOX_TOKEN=... npm run build
+npm start
 ```
 
 

@@ -37,6 +37,7 @@
 	},
 	"scripts": {
 		"build": "env NODE_ENV=production browserify -g [ babelify --presets env ] -g [ envify purge ] client/index.js | uglifyjs -mc > client/bundle.js",
-		"build:dev": "env NODE_ENV=dev browserify -g envify client/index.js > client/bundle.js"
+		"build:dev": "env NODE_ENV=dev browserify -g envify client/index.js > client/bundle.js",
+		"start": "node index.js"
 	}
 }
