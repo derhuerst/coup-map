@@ -1,0 +1,32 @@
+{
+	"private": true,
+	"name": "coup-map",
+	"description": "A map showing all COUP scooters in Berlin.",
+	"version": "0.1.0",
+	"keywords": [
+		"coup",
+		"scooters",
+		"ride sharing",
+		"map"
+	],
+	"author": "Jannis R <mail@jannisr.de>",
+	"homepage": "https://github.com/derhuerst/coup-map",
+	"repository": "derhuerst/coup-map",
+	"bugs": "https://github.com/derhuerst/coup-map/issues",
+	"license": "ISC",
+	"engines": {
+		"node": ">=6"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"babel-core": "^6.26.3",
+		"babel-preset-env": "^1.6.1",
+		"babelify": "^8.0.0",
+		"browserify": "^16.2.0",
+		"uglify-es": "^3.3.9"
+	},
+	"scripts": {
+		"build": "browserify -g [ babelify --presets env ] index.js | uglifyjs -mc > bundle.js",
+		"build:dev": "browserify index.js > bundle.js"
+	}
+}
