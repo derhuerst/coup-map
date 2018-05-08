@@ -22,8 +22,10 @@
 		"corser": "^2.0.1",
 		"express": "^4.16.3",
 		"fetch-ponyfill": "^6.0.2",
+		"lodash.omit": "^4.5.0",
 		"pinkie-promise": "^2.0.1",
-		"serve-static": "^1.13.2"
+		"serve-static": "^1.13.2",
+		"stringify-entities": "^1.3.2"
 	},
 	"devDependencies": {
 		"babel-core": "^6.26.3",
